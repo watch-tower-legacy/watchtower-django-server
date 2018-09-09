@@ -19,7 +19,7 @@ def security_search(request):
 		'toDate': end_date
 		})
 	
-	return HttpResponse(security_search_results.json)
+	return HttpResponse(security_search_results.text)
 
 def performance_data(request):
 	#requiered field
@@ -38,4 +38,4 @@ def performance_data(request):
 		'endDate': end_date
 		})
 
-	return HttpResponse(performance_data_results.json)
+	return HttpResponse(performance_data_results.text)
